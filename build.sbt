@@ -13,10 +13,13 @@ resolvers ++= Seq(
   "Sonatype Releases" at "http://oss.sonatype.org/content/repositories/releases"
 )
 
+/** dependencyReport settings */
+com.micronautics.dependencyReport.DependencyReport.dependencyReportSettings
+
 libraryDependencies ++= Seq(
   "org.scalacheck" %% "scalacheck" % "1.10.0" % "test",
   "org.scala-tools.testing" % "test-interface" % "0.5",
-  "org.specs2" %% "specs2-scalaz-core" % "6.0.1",
+  "org.specs2" %% "specs2-scalaz-core" % "7.0.0",
   "org.specs2" %% "specs2" % "1.13",
   "org.pegdown" % "pegdown" % "1.0.2"
 )
